@@ -1,0 +1,87 @@
+body{
+    background-color:whitesmoke;
+}
+
+.game-div{
+    width: 90%;
+    height: 800px;
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top:2rem;
+}
+
+.room-options{
+    width: 350px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-room{
+    width: 80%;
+    height: 800px;
+    background-image: url('img/living-room.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition-duration: 1s;
+    -webkit-box-shadow: 0 10px 6px -6px lightslategrey;
+    box-shadow: 0 10px 6px -6px lightslategrey;
+}
+
+.living-room,
+.kitchen,
+.dining-room,
+.bedroom{
+    height:180px;
+    width: auto;
+    background-color:blue;
+    margin-left:20px;
+    -webkit-box-shadow: 0 10px 6px -6px grey;
+    box-shadow: 0 10px 6px -6px grey;
+}
+
+.living-room{
+    background: url('img/living-room.png');
+    background-size: cover;
+}
+
+.dining-room{
+    background-image: url('img/dining-room.png');
+    background-size: cover;
+}
+
+.kitchen{
+    background-image: url('img/kitchen.png');
+    background-size: cover;
+}
+
+.bedroom{
+    background-image: url('img/bedroom.png');
+    background-size: cover;
+}
+
+#key{
+    position:fixed;
+    width:1rem;
+    top:100px;
+}
+
+.living-room:hover,
+.kitchen:hover,
+.dining-room:hover,
+.bedroom:hover{
+    transform:scale(1.05);
+}
+
+.living-room:active,
+.kitchen:active,
+.dining-room:active,
+.bedroom:active{
+    transform:scale(1);
+}
+
+div:focus{
+    outline:5px solid lightgreen;
+}
